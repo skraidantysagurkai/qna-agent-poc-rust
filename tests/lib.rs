@@ -1,2 +1,2 @@
-#[path = "health/health_test.rs"]
-mod health_test;
+#[path = "health/test_health.rs"]
+mod test_health;

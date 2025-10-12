@@ -9,7 +9,7 @@ mod helpers;
 use helpers::create_test_app;
 
 #[tokio::test]
-async fn test_health_endpoint_returns_200() {
+async fn test_when_health_endpoint_is_working_then_returns_200() {
     let app = create_test_app().await;
 
     let response = app
@@ -26,7 +26,7 @@ async fn test_health_endpoint_returns_200() {
 }
 
 #[tokio::test]
-async fn test_health_endpoint_returns_correct_json() {
+async fn test_when_health_endpoint_is_working_then_returned_json_contents_are_correct() {
     let app = create_test_app().await;
 
     let response = app
@@ -49,7 +49,7 @@ async fn test_health_endpoint_returns_correct_json() {
 }
 
 #[tokio::test]
-async fn test_health_endpoint_content_type() {
+async fn test_when_health_endpoint_is_working_then_json_is_returned() {
     let app = create_test_app().await;
 
     let response = app
