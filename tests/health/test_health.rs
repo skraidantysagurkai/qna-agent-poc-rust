@@ -45,6 +45,7 @@ async fn test_when_health_endpoint_is_working_then_returned_json_contents_are_co
     assert_eq!(json["status"], "healthy");
     assert_eq!(json["service"], "qna-agent-poc-rust");
     assert_eq!(json["version"], "0.1.0");
+    assert_eq!(json["env"], "test");
     assert!(json["timestamp"].is_string());
 }
 
